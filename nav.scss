@@ -1,3 +1,51 @@
+// Navimated by Caleb Jessie
+
 body {
 	background: #dfdfdf;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+a {
+	text-decoration: none;
+}
+
+.navimated-header {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	margin-left: -62px;
+	
+	div {
+		background: #444;
+		width: 30px;
+		height: 30px;
+	}
+}
+.navimated-sandwich {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+nav {
+	position: absolute;
+	background: #444;
+	width: 0;
+	height: 140px;
+	top: 30px;
+	left: 30px;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 10px 0;
+
+		li {
+			padding: 6px 0;
+			margin: 0 30px 0 0;
+
+			a {
+				color: #fff;
+			}
+		}
+	}
 }
