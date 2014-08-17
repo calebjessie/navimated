@@ -1,46 +1,36 @@
 // Navimated by Caleb Jessie
 
 var main = function(){
-	// Declare navState closed
-	var navState = "closed";
-	
-	// Open Navimation
-	function openNav() {
-		$('.navimated-header div').animate({
-			height: "170px"
-		}, 300, 'easeInOutQuart').queue(function(){
-			$('nav').animate({
-				width: "85px"
-			}, 300, 'easeInOutQuart').queue(function(){
-				$('nav ul').show(250);
+
+	// toggle navimation
+	function toggleNav() {
+		if($('nav').css("width") == "0px") {
+			$('.navimated-header div').stop(true).animate({
+				height: "170px"
+			}, 300).queue(function(){
+				$('nav').animate({
+					width: "85px"
+				}, 300).queue(function(){
+					$('nav ul').show(250);
+					$(this).dequeue();
+				});
 				$(this).dequeue();
 			});
-			$(this).dequeue();
-		});
-		navState = "open"
+		} else {
+			$('nav ul').hide(250);
+			$('nav').animate({
+				width: "0px"
+			}, 300).queue(function(){
+				$('.navimated-header div').animate({
+					height: "30px"
+				}, 300);
+				$(this).dequeue();
+			});
+		};
 	};
-	// Close Navimation
-	function closeNav() {
-		$('nav ul').hide(250);
-		$('nav').animate({
-			width: "0px"
-		}, 300, 'easeInOutQuart').queue(function(){
-			$('navimated-header div').animate({
-				height: "0px"
-			}, 300, 'easeInOutQuart');
-			$(this).dequeue();
-		});
-		navState = "closed";
-	}
 
 	$('nav ul').hide();
-	if (navState == "closed") {
-		$('.navimated-sandwich').click(openNav);
-	} 
-	if (navState == "open") {
-		$('.navimated-sandwich').click(closeNav);
-	}
-	console.log(navState);
+	$('.navimated-sandwich').click(toggleNav);
 };
 
 $(document).ready(main);
