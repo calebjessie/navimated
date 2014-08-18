@@ -1,2 +1,2 @@
-= Navimated
+== Navimated
 - By Caleb Jessie
