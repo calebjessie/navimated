@@ -28,21 +28,6 @@ var main = function(){
 		// 	});
 		// };
 		if($('nav').css("display") == "none") {
-			function menuIconAnimate() {
-				$('.navimated-menu-icon:before').animate({
-					margin-top: 0
-				});
-				$('.navimated-menu-icon:after').animate({
-					margin-top: 0
-				});
-				$('.navimated-menu-icon').animate({
-					-webkit-transform: "45deg",
-					-moz-transform:    "45deg",
-					-ms-transform:     "45deg",
-					-o-transform:      "45deg",
-					transform:         "45deg"
-				});
-			};
 			$('nav').show();
 			$('nav').animate({
 				opacity: "1",
