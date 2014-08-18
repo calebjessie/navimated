@@ -1,2 +1,4 @@
-== Navimated
-- By Caleb Jessie
+Navimated
+==============
+By Caleb Jessie
+-------------------
