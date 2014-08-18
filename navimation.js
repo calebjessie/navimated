@@ -32,12 +32,12 @@ var main = function(){
 			$('nav').animate({
 				opacity: "1",
 				top: "30px"
-			}, 400)
+			}, 250)
 		} else {
 			$('nav').animate({
 				opacity: "0",
 				top: "20px"
-			}, 400).queue(function(){
+			}, 250).queue(function(){
 				$('nav').hide();
 				$(this).dequeue();
 			});
