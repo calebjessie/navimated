@@ -15,11 +15,30 @@ a {
     background: #444;
     width: 30px;
     height: 30px; }
+    .navimated-header div:hover {
+      background: #262626; }
 
 .navimated-sandwich {
   display: inline-block;
   width: 30px;
   height: 30px; }
+
+.navimated-sandwich-icon {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  margin: 14px 0 0 8px; }
+  .navimated-sandwich-icon:before, .navimated-sandwich-icon:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background: #fff; }
+  .navimated-sandwich-icon:before {
+    margin-top: -5px; }
+  .navimated-sandwich-icon:after {
+    margin-top: 5px; }
 
 nav {
   background: #444;
@@ -36,4 +55,7 @@ nav {
       padding: 6px 0;
       margin: 0 30px 0; }
       nav ul li a {
-        color: #fff; }
+        color: #fff;
+        opacity: .8; }
+        nav ul li a:hover {
+          opacity: 1; }

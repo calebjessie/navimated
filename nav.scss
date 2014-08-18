@@ -19,12 +19,37 @@ a {
 		background: #444;
 		width: 30px;
 		height: 30px;
+
+		&:hover {
+			background: #262626;
+		}
 	}
 }
 .navimated-sandwich {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
+}
+.navimated-sandwich-icon {
+	display: inline-block;
+	width: 15px;
+	height: 2px;
+	background: #fff;
+	margin: 14px 0 0 8px;
+
+	&:before, &:after {
+		content: "";
+		display: inline-block;
+		width: 15px;
+		height: 2px;
+		background: #fff;
+	}
+	&:before {
+		margin-top: -5px;
+	}
+	&:after {
+		margin-top: 5px;
+	}
 }
 nav {
 	background: #444;
@@ -45,6 +70,11 @@ nav {
 
 			a {
 				color: #fff;
+				opacity: .8;
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 	}
