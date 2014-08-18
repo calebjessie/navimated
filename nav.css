@@ -18,26 +18,26 @@ a {
     .navimated-header div:hover {
       background: #262626; }
 
-.navimated-sandwich {
+.navimated-menu {
   display: inline-block;
   width: 30px;
   height: 30px; }
 
-.navimated-sandwich-icon {
+.navimated-menu-icon {
   display: inline-block;
   width: 15px;
   height: 2px;
-  background: #fff;
-  margin: 14px 0 0 8px; }
-  .navimated-sandwich-icon:before, .navimated-sandwich-icon:after {
+  margin: 14px 0 0 8px;
+  background: #fff; }
+  .navimated-menu-icon:before, .navimated-menu-icon:after {
     content: "";
     display: inline-block;
     width: 15px;
     height: 2px;
     background: #fff; }
-  .navimated-sandwich-icon:before {
+  .navimated-menu-icon:before {
     margin-top: -5px; }
-  .navimated-sandwich-icon:after {
+  .navimated-menu-icon:after {
     margin-top: 5px; }
 
 nav {

@@ -14,7 +14,7 @@ a {
 	top: 25px;
 	left: 50%;
 	margin-left: -62px;
-	
+
 	div {
 		background: #444;
 		width: 30px;
@@ -25,17 +25,17 @@ a {
 		}
 	}
 }
-.navimated-sandwich {
+.navimated-menu {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
 }
-.navimated-sandwich-icon {
+.navimated-menu-icon {
 	display: inline-block;
 	width: 15px;
 	height: 2px;
-	background: #fff;
 	margin: 14px 0 0 8px;
+	background: #fff;
 
 	&:before, &:after {
 		content: "";
