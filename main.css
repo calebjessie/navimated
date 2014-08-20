@@ -23,12 +23,15 @@ h2 {
   width: 960px;
   margin: 0 auto; }
 
-.navimated-header div {
-  background: #444;
-  width: 30px;
-  height: 30px; }
-  .navimated-header div:hover {
-    background: #262626; }
+.navimated-header {
+  position: relative;
+  margin: 20px; }
+  .navimated-header div {
+    background: #444;
+    width: 30px;
+    height: 30px; }
+    .navimated-header div:hover {
+      background: #262626; }
 
 .navimated-menu {
   display: inline-block;
