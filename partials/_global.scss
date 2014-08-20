@@ -6,6 +6,20 @@ body {
 a {
     text-decoration: none;
 }
+header {
+    border-bottom: 1px solid #d0d0d0;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h1, h2 {
+    display: inline-block;
+}
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;

@@ -6,21 +6,29 @@ body {
 a {
   text-decoration: none; }
 
+header {
+  border-bottom: 1px solid #d0d0d0; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+h1, h2 {
+  display: inline-block; }
+
+h2 {
+  font-size: 18px;
+  font-weight: normal; }
+
 .container {
   width: 960px;
   margin: 0 auto; }
 
-.navimated-header {
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  margin-left: -62px; }
-  .navimated-header div {
-    background: #444;
-    width: 30px;
-    height: 30px; }
-    .navimated-header div:hover {
-      background: #262626; }
+.navimated-header div {
+  background: #444;
+  width: 30px;
+  height: 30px; }
+  .navimated-header div:hover {
+    background: #262626; }
 
 .navimated-menu {
   display: inline-block;
@@ -63,3 +71,7 @@ nav {
         opacity: .8; }
         nav ul li a:hover {
           opacity: 1; }
+
+section {
+  width: 200px;
+  margin: 40px 20px; }
