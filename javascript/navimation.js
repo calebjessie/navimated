@@ -2,8 +2,30 @@
 
 var main = function(){
 
-	// toggle navimation
-	function toggleNav() {
+	/*
+	To Do
+	Add more animations
+	Seperate these animations into individual files
+	 */
+
+	function fadeInFadeOut() {
+		if($('nav').css("display") == "none") {
+			$('nav').show();
+			$('nav').animate({
+				opacity: "1",
+				top: "30px"
+			}, 250);
+		} else {
+			$('nav').animate({
+				opacity: "0",
+				top: "20px"
+			}, 250).queue(function(){
+				$('nav').hide();
+				$(this).dequeue();
+			});
+		};
+	};
+	function slideOutSlideIn() {
 		// if($('nav').css("width") == "0px") {
 		// 	$('.navimated-header div').stop(true).animate({
 		// 		height: "170px"
@@ -27,25 +49,10 @@ var main = function(){
 		// 		$(this).dequeue();
 		// 	});
 		// };
-		if($('nav').css("display") == "none") {
-			$('nav').show();
-			$('nav').animate({
-				opacity: "1",
-				top: "30px"
-			}, 250);
-		} else {
-			$('nav').animate({
-				opacity: "0",
-				top: "20px"
-			}, 250).queue(function(){
-				$('nav').hide();
-				$(this).dequeue();
-			});
-		}
-	};
+	}
 
 	// $('nav ul').hide();
-	$('.navimated-menu').click(toggleNav);
+	$('.navimated-menu').click(fadeInFadeOut);
 };
 
 $(document).ready(main);
